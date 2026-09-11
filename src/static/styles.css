@@ -59,19 +59,120 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
-  padding: 15px;
+  padding: 16px;
   border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ffffff 0%, #eef4ff 100%);
+  box-shadow: 0 4px 10px rgba(26, 35, 126, 0.08);
+}
+
+.activity-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .activity-card h4 {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   color: #0066cc;
+  font-size: 1.25rem;
 }
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.participants-section {
+  margin-top: 8px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background-color: #eef3f8;
+  border: 1px solid #c9d8ee;
+}
+
+.participants-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.participants-title {
+  font-weight: bold;
+  color: #1a237e;
+}
+
+.participants-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 28px;
+  padding: 0 10px;
+  background-color: #1a237e;
+  color: white;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.participants-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.participants-list li {
+  color: #475569;
+  margin: 4px 0;
+}
+
+.participants-list li::marker {
+  color: #0066cc;
+}
+
+.participant-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(26, 35, 126, 0.08);
+}
+
+.participant-row:last-child {
+  border-bottom: none;
+}
+
+.participant-email {
+  color: #475569;
+}
+
+.delete-participant {
+  border: none;
+  background-color: #c62828;
+  color: white;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.delete-participant:hover {
+  background-color: #a61e1e;
+  transform: scale(1.08);
+}
+
+.delete-participant span {
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .form-group {
